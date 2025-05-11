@@ -141,7 +141,7 @@ elif page == "Network Visualization":
         axs[0].set_title("Original Water Network")
 
         nx.draw(G_damaged, pos, with_labels=True, node_color="orange", edge_color="gray", ax=axs[1])
-        nx.draw_networkx_edges(G_original, pos, edgelist=edges_to_remove, edge_color='red', width=2, ax=axs[1])
+        nx.draw_networkx_edges(G_original, pos, edgelist=edges_to_remove, edge_color='white', width=2, ax=axs[1])
         axs[1].set_title("Damaged Network\n(Missing edges in red)")
 
         nx.draw(G_reconstructed, pos, with_labels=True, node_color="green", edge_color="gray", ax=axs[2])
